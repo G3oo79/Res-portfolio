@@ -54,6 +54,10 @@ nav {
 	margin-bottom: 0px;
 }
 
+#lens{
+  
+}
+
 .nav-wraper {
 	border-bottom: 0px;
 }
@@ -63,6 +67,28 @@ nav {
 
 }
 
+.nameTitle {
+  padding: 150px;
+  text-align: center;
+  letter-spacing: 2rem;
+  font-size: 6rem;
+  color: white;
+}
+
+/*//////////////////////PARTICLES///////////////////*/
+
+#particles-js {
+   position: fixed;
+   width: 100%;
+  
+
+}
+
+canvas {
+ /* position: absolute;*/
+  height: 508px;
+  width: 100%;
+}
 
 
 

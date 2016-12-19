@@ -1,20 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<title>Home</title>
 
-			<!-- ///////////Jquery Link/////////////////////////////// -->
-			<script
-			src="https://code.jquery.com/jquery-3.1.1.js"
-			integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-			crossorigin="anonymous"></script>
-
 			<!-- /////////////Compiled and minified CSS////////////// -->
 		  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-
-		  	<!-- ///////////Compiled and minified JavaScript////////// -->
-		  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
 		  			
 			<!-- ////////////////////Link to style file//////////////// -->
@@ -35,18 +27,27 @@
 		<!-- /////////////////Start Parallax////////////////////// -->
 		<div class="parallax-container">
 			<!-- ///////////////Start Navigation bar/////////// -->
-			<nav>
+		<nav>
     		<div class="nav-wrapper ">
       		<a href="#" class="brand-logo" id="logo"><strong>G3oo0</strong></a>
       			<ul id="nav-mobile" class="right hide-on-med-and-down">
 	        		<li><a href="">Home</a></li>
-	        		<li><a href="">About</a></li>
-	        		<li><a href="">Contact</a></li>
+	        		<li><a href="#par-1">About</a></li>
+	        		<li><a href="#footer">Contact</a></li>
       			</ul>
     		</div>
   		</nav>
+
+  		
   		<!-- ///////////////End NavBar///////////////////// -->
-    		<div class="parallax"><img src="assets/images/lens.jpg" style="display: block; transform: translate3d(-50%, 0px, 0px);"></div>
+    		<div class="parallax" id="lens"><img src="assets/images/lens.jpg">
+    			<div id="particles-js">
+    				<canvas style="display: block; transform: translate3d(0%, 0px, 0px);"></canvas>
+    			</div>
+
+				
+    		</div>
+    		<div class="nameTitle"><h1>Fausto Brito</h1></div>
   		</div>
 
 		<div class="section white"  id="par-1">
@@ -140,19 +141,21 @@
 
 		<div class="parallax-container">
     		<div class="parallax"><img src="assets/images/home-bg.jpg" style="display: block transform: translate3d(-50%, 0px, 0px);">
+    			
 
     		</div>
     	</div>
 
-		<footer class="page-footer deep-purple darken-3">
+		<footer class="page-footer deep-purple darken-3" id="footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">Contact Me</h5><br>
-                <ul>
-                  <li><i class="material-icons dp48 small">email</i> ||<a href="">fgbritom79@hotmail.com</a></li><br>
-                  <li><i class="material-icons dp48 small">call</i> ||<a href="">1-862-224-0588</a></li>
-                </ul>
+               	<form method="POST" action="http://formspree.io/fgbritom79@gmail.com">
+					<input type="email" name="email" placeholder="Your email">
+					<textarea name="message" placeholder="Your message"></textarea>
+					<button type="submit">Send</button>
+				</form>
               </div>
               <div class="col l4 offset-l2 s12">
               	<h5 class="white-text">Connect</h5>
@@ -176,9 +179,20 @@
 		
 		
 
-		<!-- ////////////////JavaScript////////////////////////// -->
-		<script src="assets/app.js"></script>
+		
+		<script src="assets/main.min.js"></script>
 
+		<!-- ///////////Jquery Link/////////////////////////////// -->
+		<script
+		src="https://code.jquery.com/jquery-3.1.1.js"
+		integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+		crossorigin="anonymous"></script>
+		
+		<!-- ////////////////JavaScript////////////////////////// -->
+		<script src="assets/app.js">particles();</script>
+		<!-- ///////////Compiled and minified JavaScript////////// -->
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+		
 		
 	</body>
 </html>
