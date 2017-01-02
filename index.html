@@ -3,11 +3,10 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Home</title>
+		<title>Geo's Awesome Page</title>
 
 			<!-- /////////////Compiled and minified CSS////////////// -->
 		  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-
 		  			
 			<!-- ////////////////////Link to style file//////////////// -->
 		  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -19,7 +18,7 @@
 		  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 		  	<!-- //////////////////////Google Fonts Api//////////////////////////// -->
-		  	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Orbitron">
+		  	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Orbitron|Roboto">
 			
 	</head>
 
@@ -27,43 +26,41 @@
 		<!-- /////////////////Start Parallax////////////////////// -->
 		<div class="parallax-container">
 			<!-- ///////////////Start Navigation bar/////////// -->
-		<nav>
-    		<div class="nav-wrapper ">
-      		<a href="#" class="brand-logo" id="logo"><strong>G3oo0</strong></a>
-      			<ul id="nav-mobile" class="right hide-on-med-and-down">
-	        		<li><a href="">Home</a></li>
-	        		<li><a href="#par-1">About</a></li>
-	        		<li><a href="#footer">Contact</a></li>
-      			</ul>
-    		</div>
-  		</nav>
+			<nav>
+	    		<div class="nav-wrapper ">
+	      		<a href="#" class="brand-logo" id="logo"><strong>G3oo0</strong></a>
+	      			<ul id="nav-mobile" class="right hide-on-med-and-down">
+		        		<li><a href="">Home</a></li>
+		        		<li><a href="#par-1">About</a></li>
+						<li><a href="#par-2">Portfolio</a></li>
+		        		<li><a href="#footer">Contact</a></li>
+	      			</ul>
+	    		</div>
+	  		</nav>
 
   		
   		<!-- ///////////////End NavBar///////////////////// -->
     		<div class="parallax" id="lens"><img src="assets/images/lens.jpg">
     			<div id="particles-js">
     				<canvas style="display: block; transform: translate3d(0%, 0px, 0px);"></canvas>
-    			</div>
-
-				
+    			</div>	
     		</div>
-    		<div class="nameTitle"><h1>Fausto Brito</h1></div>
+    		<div class="nameTitle"><h1 id="container2">G3oo0</h1></div>
+    		<div class="randomText"><p id="container">Web Developer</p></div>
   		</div>
 
-		<div class="section white"  id="par-1">
+		<div class="section whiten"  id="par-1">
 			<div class="row container">
-				<h2 class="header center">Hello!, I'm Fausto Brito</h2>
-				<p class="black-text text-darken-3 lighten-3 " style="font-size: 30px;">A Full-Stack Developer/Electronic Technician well-versed on a diverse programing languages. That can make awesome happen!... </p>
-				<p class="black-text text-darken-3 lighten-3 " style="font-size: 25px;">Specialized in Responsive Web Developing Troubleshooting and problem solving. Well-versed on: HTML5, CSS3, Javascript, JQuery.</p>
-				<div class="col s12 center">
-					<img class="hcj-image" src="assets/images/4Pm03N.png">
+				<h3 class="header center">About Me</h3><hr>
+
+				<div class="col s4"><br>
+					<img id="mypic" src="assets/images/fausto.png" alt="picture">	
 				</div>
-				<p class="text-darken-3 lighten-3 " style="font-size: 30px;">Able to develop cool sites using Frameworks such as Bootstrap, Materialize.</p>
-				<div class="col s12 center">
-					<img class="bootstrap-image" src="assets/images/Materialize-Bootstrap.jpeg">
+
+				<div class="col s8">
+					<p class="black-text text-darken-3 lighten-3 " style="font-size: 20px;">Web developer with a background  in Computer Electronics. Highly motivated self-starter capable of working independently as well as in group settings. Able to build sophisticated websites with full database backend all the way from mockup to rollout. Well-versed in numerous programming languages including HTML5, CSS3, JavaScrip, Jquery, Node.js. Bilingual proficient in spanish. Intensive training in troubleshooting, technical and safety procedures. using measuring and diagnostic devices to adjust, test, and repair equipment. </p>
 				</div>
 			</div>
-
 		</div>
 
   		<div class="parallax-container">
@@ -151,7 +148,7 @@
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">Contact Me</h5><br>
-               	<form method="POST" href="mailto: fgbritom79@gmail.com">
+               	<form method="POST" href="mailto:fgbritom79@gmail.com">
 					<input type="email" name="email" placeholder="Your email">
 					<textarea name="message" placeholder="Your message"></textarea>
 					<button type="submit">Send</button>
@@ -192,6 +189,11 @@
 		<script src="assets/app.js">particles();</script>
 		<!-- ///////////Compiled and minified JavaScript////////// -->
 	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+	  	<!--//////////////////letter Shuffle///////////////////////-->
+	  	<script src="assets/js/jquery.shuffleLetters.js"></script>
+	  	<script src="assets/js/script.js"></script>
+	  	  
 		
 		
 	</body>

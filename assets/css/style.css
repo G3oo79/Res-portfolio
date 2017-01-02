@@ -23,6 +23,11 @@ body {
   	height: 60px;
   }
 
+#mypic {
+  height: 250px;
+  width: 250px;
+}
+
 .hcj-image {
 	width: 220px;
 	height: 220px;
@@ -54,6 +59,11 @@ nav {
 	margin-bottom: 0px;
 }
 
+hr {
+    border-width: 3px;  
+    border-style: inset;
+}
+
 #lens{
   
 }
@@ -68,13 +78,21 @@ nav {
 }
 
 .nameTitle {
-  padding: 150px;
+  padding: 100px 150px 10px 150px;
   text-align: center;
   letter-spacing: 2rem;
   font-size: 6rem;
   color: white;
 }
 
+.randomText {
+  color: white;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 30px;
+  text-decoration: underline;
+  letter-spacing: 2rem;
+}
 /*//////////////////////PARTICLES///////////////////*/
 
 #particles-js {
