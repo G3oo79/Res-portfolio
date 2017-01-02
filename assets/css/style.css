@@ -23,10 +23,10 @@ body {
   	height: 60px;
   }
 
-#mypic {
+/*#mypic {
   height: 250px;
   width: 250px;
-}
+}*/
 
 .hcj-image {
 	width: 220px;
@@ -98,7 +98,6 @@ hr {
 #particles-js {
    position: fixed;
    width: 100%;
-  
 
 }
 
