@@ -3,12 +3,12 @@ $(function(){
 	// container is the DOM element;
 	// userText is the textbox
 	
-	var container = $("#container")
+	/*var container = $("#container")*/
 		/*userText = $('#userText'); */
 	var container2 = $("#container2")
 	
 	// Shuffle the contents of container
-	container.shuffleLetters();
+	/*container.shuffleLetters();*/
 	container2.shuffleLetters();
 
 	// Bind events
@@ -36,9 +36,9 @@ $(function(){
 	setTimeout(function(){
 		
 		// Shuffle the container with custom text
-		container.shuffleLetters({
+		/*container.shuffleLetters({
 			"text": "Test it for yourself!"
-		});
+		});*/
 
 		container2.shuffleLetters({
 			"text": "Fausto Brito"

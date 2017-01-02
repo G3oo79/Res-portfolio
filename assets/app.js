@@ -1,6 +1,50 @@
 $(document).ready(function(){
 	
+	/////////////Activates Parallax effect/////////////////
     $('.parallax').parallax();
+
+    //////////////To top click function////////////////////
+    //////////////////////////////////////////////////////
+    var amountScrolled = 400;
+
+	$(window).scroll(function() {
+
+		if ( $(window).scrollTop() > amountScrolled ) {
+			$('a.back-to-top').fadeIn('slow');
+			$('a.side-iconz').fadeOut('slow');
+			$('#nav').addClass( "navbar-fixed").fadeIn('slow');
+
+			$('nav').css("background-color", "rgba(255, 255, 255, " + ($(window).scrollTop()/1000) + ")" );
+			$('ul#slide-out.side-nav').css("background-color", "rgba(255, 255, 255, " + ($(window).scrollTop()/1000) + ")" );
+
+			$('nav a').css("color", "black");
+			$('nav ul a').css("color", "black");
+			$('nav .brand-logo').css("color", "black");
+		} else {
+			$('a.back-to-top').fadeOut('slow');
+			$('a.side-iconz').fadeIn('slow');
+			$('.navbar-fixed').fadeOut('slow');
+			$('#nav').removeClass( "navbar-fixed" );
+			$('#nav').fadeIn('slow');
+
+			$('nav').css( "background-color", "rgba(45, 45, 45, 0.5)" );
+			$('ul#slide-out.side-nav').css( "background-color", "rgba(45, 45, 45, 0.5)" );
+
+			$('nav a').css("color", "#fff");
+			$('nav ul a').css("color", "#fff");
+			$('nav .brand-logo').css("color", "#fff");
+
+		}
+
+
+	});
+
+	$('a.back-to-top').click(function() {
+		$('html, body').animate({
+			scrollTop: 0
+		}, 700);
+		return false;
+	});
 
 //////////////////Particles Json////////////////////////////
 ///////////////////////////////////////////////////////////
@@ -69,8 +113,19 @@ $(document).ready(function(){
 		"retina_detect": true,	
 
 	});
-////////////////////////End of Particle Json////////////////////////	
+////////////////////////End of Particle Json////////////////////////
+
+
 });
+
+////////////////////////Start Typed.js/////////////////////////////
+//////////////////////////////////////////////////////////////////
+	$(function(){
+      $(".element").typed({
+        strings: ["Web Developer", "TroubleShooting.", "Problem Solving.", "Electronic Technician.", "Soldering."],
+        typeSpeed: 0
+      });
+  });	
 
 
 
