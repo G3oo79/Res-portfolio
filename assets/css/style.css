@@ -23,10 +23,9 @@ body {
   	height: 60px;
   }
 
-/*#mypic {
-  height: 250px;
-  width: 250px;
-}*/
+.me {
+  margin: 0px;
+}
 
 .hcj-image {
 	width: 220px;
@@ -105,6 +104,33 @@ a.back-to-top {
   text-decoration: underline;
   letter-spacing: 2rem;
 }
+
+/*//////////////////////HTML Image Icons////////////////*/
+
+#html{
+  height: 100px;
+  width: 100px;
+  margin: 0px;
+}
+
+#mongo {
+  height: 100px;
+  width: 300px;
+}
+
+/*//////////////////////Portfolio Images/////////////*/
+
+.img-responsive {
+  width: 480px;
+  height:300px;
+}
+
+.imgDescription {
+  color white;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
 /*//////////////////////PARTICLES///////////////////*/
 
 #particles-js {
@@ -148,6 +174,7 @@ canvas {
   text-align: center;
   font-size: 30px;
   text-decoration: underline;
+  letter-spacing: 1rem;
 }
 
 

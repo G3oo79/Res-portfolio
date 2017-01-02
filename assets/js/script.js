@@ -46,7 +46,7 @@ $(function(){
 		
 		/*userText.val("type anything and hit return..").fadeIn();*/
 		
-	},3000);
+	},2000);
 
 
 });
