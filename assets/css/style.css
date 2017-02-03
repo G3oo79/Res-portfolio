@@ -1,8 +1,8 @@
-.parallax-container {
+/*parallax-container {
 	position: relative;
 	overflow: hidden;
-    height: 500px;
-    }
+    height: 550px;
+    }*/
 body {
     display: flex;
     min-height: 100vh;
@@ -60,6 +60,11 @@ body {
 	background-image: url("../images/darkwhite.jpg")
 }
 
+#imageMiddle {
+  width: 1050px;
+  height: 800px;
+}
+
 nav {
 	background: transparent;
 	margin-bottom: 0px;
@@ -70,9 +75,6 @@ hr {
     border-style: inset;
 }
 
-#lens{
-  
-}
 
 .material-icons {
   background: blue;
