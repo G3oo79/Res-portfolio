@@ -1,8 +1,8 @@
-/*parallax-container {
+parallax-container {
 	position: relative;
 	overflow: hidden;
     height: 550px;
-    }*/
+    }
 body {
     display: flex;
     min-height: 100vh;
