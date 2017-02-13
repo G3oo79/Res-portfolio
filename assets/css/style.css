@@ -143,13 +143,13 @@ a.back-to-top {
 /*//////////////////////PARTICLES///////////////////*/
 
 #particles-js {
-   position: fixed;
+   position: relative;
    width: 100%;
 
 }
 
 canvas {
- /* position: absolute;*/
+  position: absolute;
   height: 508px;
   width: 100%;
 }

@@ -1,6 +1,5 @@
-$(document).ready(function(){
-	
-	/////////////Activates Parallax effect/////////////////
+$(window).on('load', function() { 
+/////////////Activates Parallax effect/////////////////
     $('.parallax').parallax();
 
 //////////////////Particles Json////////////////////////////
@@ -86,25 +85,25 @@ $(document).ready(function(){
 
 //////////////To top click function////////////////////
     //////////////////////////////////////////////////////
-    var amountScrolled = 400;
+    var amountScrolled = 500;
 
 	$(window).scroll(function() {
 
 		if ( $(window).scrollTop() > amountScrolled ) {
 			$('a.back-to-top').fadeIn('slow');
 			$('a.side-iconz').fadeOut('slow');
-			$('#nav').addClass( "navbar-fixed").fadeIn('slow');
+			/*$('#nav').addClass( "navbar-fixed").fadeIn('slow');*/
 
-			$('nav').css("background-color", "rgba(255, 255, 255, " + ($(window).scrollTop()/1000) + ")" );
+			/*$('nav').css("background-color", "rgba(255, 255, 255, " + ($(window).scrollTop()/1000) + ")" );
 			$('ul#slide-out.side-nav').css("background-color", "rgba(255, 255, 255, " + ($(window).scrollTop()/1000) + ")" );
 
 			$('nav a').css("color", "black");
 			$('nav ul a').css("color", "black");
-			$('nav .brand-logo').css("color", "black");
+			$('nav .brand-logo').css("color", "black");*/
 		} else {
 			$('a.back-to-top').fadeOut('slow');
 			$('a.side-iconz').fadeIn('slow');
-			$('.navbar-fixed').fadeOut('slow');
+			/*$('.navbar-fixed').fadeOut('slow');
 			$('#nav').removeClass( "navbar-fixed" );
 			$('#nav').fadeIn('slow');
 
@@ -113,7 +112,7 @@ $(document).ready(function(){
 
 			$('nav a').css("color", "#fff");
 			$('nav ul a').css("color", "#fff");
-			$('nav .brand-logo').css("color", "#fff");
+			$('nav .brand-logo').css("color", "#fff");*/
 
 		}
 
@@ -125,7 +124,11 @@ $(document).ready(function(){
 			scrollTop: 0
 		}, 700);
 		return false;
-	});
+
+ });
+
+
+
 
 
 
